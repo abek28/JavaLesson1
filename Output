@@ -1,0 +1,27 @@
+package JavaLab1;
+
+/**
+ * изучение операторов инкремент, декремент
+ *
+ * @author Baiamanova A.
+ * @version 1.0
+ */
+public class IncrementDecrement {
+    public static void main(String[] args) {
+        int x = 3, y = 10;
+
+        // с использованием инкремента
+        System.out.println("первоначально х= " +x);
+        System.out.println("первоначально y= " +y);
+        System.out.println("х++= " + x++);
+        System.out.println("++y= " + ++y);
+        System.out.println("итого х= " + x);
+        System.out.println("итого y= " + y);
+
+        //арифметическое выражение с использованием декремента
+         int a = 1, b = 9;
+         System.out.println("\na = 1,b = 9 \n9*a + (b-1) = "+ (9*a + --b));
+
+
+    }
+}
