@@ -1,0 +1,23 @@
+public class ConditionalOperators {
+    public static void main(String[] args) {
+        int y, x = 1;
+        if (x>0)
+            y = 1;
+        else
+            y = -1;
+        System.out.println("Первый вариант "  + "x = " + x + " y = " + y);
+        y = (x > 0) ? 1 : -1;
+        System.out.println("Второй вариант "  + "x = " + x + " y = " + y);
+        int number = 3;
+        System.out.println(number%2==0? "Число" + number + "четное" : "Число " + number + " нечетное");
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Введите 2 числа для сравнения: ");
+        double number1 = input.nextDouble();
+        double number2 = input.nextDouble();
+        double max = (number1>number2? number1: number2);
+        System.out.println("Наибольшее из двух чисел: " + max);
+//Самостоятельная часть, поиск минимума из двух чисел, введенных ранее.
+        double min = number1<number2 ? number1:number2;
+        System.out.println("Наименьшее из чисел: " + min);
+        if (number1>number2);
