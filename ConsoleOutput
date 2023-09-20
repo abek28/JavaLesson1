@@ -1,14 +1,4 @@
-package JavaLab1;
 
-import java.util.Scanner;
-
-/**
- * ввод данных с консоли
- * на примере вычисления длины окружности
- *
- * @author Baiamanova A.
- * @version 1.0
- */
 public class ConditionalOperators {
     public static void main(String[] args) {
         int y, x = 1;
