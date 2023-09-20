@@ -9,52 +9,28 @@ import java.util.Scanner;
  * @author Baiamanova A.
  * @version 1.0
  */
-public class ConsoleInput {
+public class ConditionalOperators {
     public static void main(String[] args) {
-        //Create a Scanner object
+        int y, x = 1;
+        if (x>0)
+            y = 1;
+        else
+            y = -1;
+        System.out.println("Первый вариант "  + "x = " + x + " y = " + y);
+        y = (x > 0) ? 1 : -1;
+        System.out.println("Второй вариант "  + "x = " + x + " y = " + y);
+        int number = 3;
+        System.out.println(number%2==0? "Число" + number + "четное" : "Число " + number + " нечетное");
         Scanner input = new Scanner(System.in);
 
-        // Prompt the user to enter a radius
-        System.out.print("Enter a number for double radius: ");
-
-        // Enter radius
-        double radiusDouble = input.nextDouble();
-
-        // Compute length
-        double lengthDouble = 2 * 3.14159 * radiusDouble;
-
-        // Display result
-        System.out.println("The length for the circle of  radius " +
-                radiusDouble + " is " + lengthDouble);
-
-        //Input Float
-        System.out.print("Enter a number for float radius: ");
-
-        // Enter radius
-        float radiusFloat = input.nextFloat();
-
-        // Compute length
-        float lengthFloat = 2 * 3.14159f * radiusFloat;
-
-        // Display result
-        System.out.printf("\nThe length for the circle of radius %f is %f ",radiusFloat, lengthFloat);
-
-        /Prompt the user to enter a birthday year
-        System.out.print("\nEnter a year of your birthday: ");
-
-        // Enter birthday year
-        int birthYear = input.nextInt();
-
-        // Prompt the user to enter today's year
-        System.out.print("Enter today's year: ");
-
-        //Enter today's year
-        int novYear = input.nextInt();
-
-        //Compute age
-        int age = novYear - birthYear;
-
-        //Display result
-        System.out.println("Your age in "+ novYear + " year will be "+ age +" years old");
+        System.out.println("Введите 2 числа для сравнения: ");
+        double number1 = input.nextDouble();
+        double number2 = input.nextDouble();
+        double max = (number1>number2? number1: number2);
+        System.out.println("Наибольшее из двух чисел: " + max);
+//Самостоятельная часть, поиск минимума из двух чисел, введенных ранее.
+        double min = number1<number2 ? number1:number2;
+        System.out.println("Наименьшее из чисел: " + min);
+        if (number1>number2);
 }
 }
