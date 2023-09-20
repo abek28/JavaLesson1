@@ -38,5 +38,23 @@ public class ConsoleInput {
 
         // Display result
         System.out.printf("\nThe length for the circle of radius %f is %f ",radiusFloat, lengthFloat);
+
+        /Prompt the user to enter a birthday year
+        System.out.print("\nEnter a year of your birthday: ");
+
+        // Enter birthday year
+        int birthYear = input.nextInt();
+
+        // Prompt the user to enter today's year
+        System.out.print("Enter today's year: ");
+
+        //Enter today's year
+        int novYear = input.nextInt();
+
+        //Compute age
+        int age = novYear - birthYear;
+
+        //Display result
+        System.out.println("Your age in "+ novYear + " year will be "+ age +" years old");
 }
 }
