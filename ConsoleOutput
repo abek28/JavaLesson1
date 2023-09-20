@@ -1,0 +1,42 @@
+package JavaLab1;
+
+import java.util.Scanner;
+
+/**
+ * ввод данных с консоли
+ * на примере вычисления длины окружности
+ *
+ * @author Baiamanova A.
+ * @version 1.0
+ */
+public class ConsoleInput {
+    public static void main(String[] args) {
+        //Create a Scanner object
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter a radius
+        System.out.print("Enter a number for double radius: ");
+
+        // Enter radius
+        double radiusDouble = input.nextDouble();
+
+        // Compute length
+        double lengthDouble = 2 * 3.14159 * radiusDouble;
+
+        // Display result
+        System.out.println("The length for the circle of  radius " +
+                radiusDouble + " is " + lengthDouble);
+
+        //Input Float
+        System.out.print("Enter a number for float radius: ");
+
+        // Enter radius
+        float radiusFloat = input.nextFloat();
+
+        // Compute length
+        float lengthFloat = 2 * 3.14159f * radiusFloat;
+
+        // Display result
+        System.out.printf("\nThe length for the circle of radius %f is %f ",radiusFloat, lengthFloat);
+}
+}
